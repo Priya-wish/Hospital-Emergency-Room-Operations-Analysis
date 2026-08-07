@@ -2,33 +2,41 @@
 
 ## Model Overview
 
-The project uses a single fact table imported from the Hospital Emergency Room dataset.
+The project follows a Star Schema approach consisting of one fact table and one supporting Calendar dimension.
 
-### Relationships
+### Fact Table
 
-- No relationships are required because the project currently contains a single fact table.
+- Hospital Emergency Room Data
 
-### Calendar Table
+### Dimension Table
 
-A Calendar table will be created to support date-based analysis, including daily and monthly trends.
+- Calendar
 
-### Modeling Approach
+## Relationships
 
-- Clean data prepared using Power Query.
-- Single-table model with a supporting Calendar dimension.
-- DAX measures will be used for KPI calculations.⁹
+| From | To | Relationship |
+|------|----|--------------|
+| Calendar[Date] | Hospital Emergency Room Data[Patient Admission Date] | One-to-Many |
 
 ## Calendar Table
 
-A dedicated Calendar table was created using DAX to support date-based analysis.
+A dedicated Calendar table was created using DAX to enable time intelligence and date-based reporting.
 
-Additional attributes added:
+The Calendar table includes:
 
+- Date
 - Year
+- Quarter
 - Month Number
 - Month Name
-- Quarter
 - Day Name
 - Weekday Number
 
-A one-to-many relationship was created between the Calendar table and the Patient Admission Date field in the Hospital Emergency Room dataset.
+Month Name is sorted using Month Number to display months in chronological order across visuals and slicers.
+
+## Modeling Approach
+
+- Data cleaned using Power Query.
+- Calendar dimension created using DAX.
+- One-to-Many relationship established.
+- KPI calculations built using DAX Measures.
