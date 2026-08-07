@@ -1,41 +1,39 @@
-# Hospital Emergency Room Operations Analysis
+# Business Requirements
 
 ## Project Overview
 
-This project analyzes Hospital Emergency Room (ER) operations using Power BI. The goal is to transform raw patient data into meaningful insights that help hospital management improve operational efficiency, reduce patient waiting times, monitor patient satisfaction, and support data-driven decision-making.
+Hospitals receive thousands of Emergency Room (ER) visits every year. Managing patient flow, reducing waiting time, improving patient satisfaction, and monitoring admissions are essential for delivering high-quality healthcare services.
+
+This project analyzes Emergency Room operations using Power BI to provide interactive insights into patient visits, admissions, waiting times, referrals, and satisfaction.
 
 ---
 
-## Business Problem
+## Business Objectives
 
-Hospital administrators need a centralized dashboard to monitor Emergency Room performance. Without proper reporting, it is difficult to identify operational bottlenecks, monitor patient flow, evaluate service quality, and allocate resources effectively.
+- Monitor Emergency Room patient volume.
+- Analyze hospital admission rates.
+- Track average patient waiting time.
+- Measure patient satisfaction.
+- Identify specialist referral patterns.
+- Analyze patient demographics.
+- Support operational decision-making through interactive dashboards.
 
 ---
 
-## Project Objective
+## Key Performance Indicators (KPIs)
 
-Develop an interactive Power BI dashboard that enables stakeholders to:
-
-- Monitor patient volume
-- Analyze waiting times
-- Track patient satisfaction
-- Evaluate admission rates
-- Understand patient demographics
-- Analyze department referrals
-- Support operational decision-making
+- Total Patients
+- Total Admissions
+- Admission Rate
+- Average Wait Time
+- Average Satisfaction Score
+- Patients Seen Within 30 Minutes
 
 ---
 
 ## Stakeholders
 
-- Hospital Administrator
-- Emergency Room Manager
+- Hospital Management
+- Emergency Room Administrators
 - Operations Team
-- Department Heads
-- Quality Improvement Team
-
----
-
-## Success Criteria
-
-The project will be considered successful if the dashboard enables stakeholders to quickly monitor key performance indicators (KPIs), identify operational trends, and make informed decisions to improve Emergency Room performance.
+- Healthcare Analysts
