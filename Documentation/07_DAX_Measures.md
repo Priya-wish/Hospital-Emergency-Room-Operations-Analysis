@@ -43,7 +43,7 @@ Shows the percentage of patients admitted to the hospital.
 
 ```DAX
 Average Wait Time =
-AVERAGE('Hospital Emergency Room Data'[Patient Wait Time])
+AVERAGE('Hospital Emergency Room Data'[Patient Waittime])
 ```
 
 Business Purpose:
@@ -69,7 +69,7 @@ Measures overall patient satisfaction.
 Patients Seen Within 30 Min =
 CALCULATE(
     [Total Patients],
-    'Hospital Emergency Room Data'[Patient Wait Time] <= 30
+    'Hospital Emergency Room Data'[Patient Waittime] <= 30
 )
 ```
 
