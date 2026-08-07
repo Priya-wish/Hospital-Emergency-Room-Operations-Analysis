@@ -2,79 +2,79 @@
 
 ## Dataset Overview
 
-- Total Columns: 12
-- Total Rows: 999+
-- Source: Hospital Emergency Room Data
+The Hospital Emergency Room dataset was assessed before data cleaning to identify quality issues that could impact reporting and analysis.
 
 ---
 
-## Data Quality Observations
+## Data Quality Checks
 
-### 1. Duplicate Column
+### Number of Tables
 
-Observation:
-- The dataset contains one duplicate column: Patient Admission Flag.
+- One fact table containing Emergency Room patient records.
 
-Action:
-- Remove the duplicate column during the data cleaning phase.
+### Number of Columns
 
-Status:
-- To Be Cleaned
+- 12 columns were available in the original dataset.
 
----
+### Number of Records
 
-### 2. Data Type Issues
-
-Observation:
-- One column has an incorrect data type.
-
-Action:
-- Convert the column to the appropriate data type in Power Query.
-
-Status:
-- To Be Cleaned
+- Approximately 9,000 patient records.
 
 ---
 
-### 3. Missing Values
+## Column Names
 
-Observation:
-- Patient Satisfaction Score contains missing (null) values.
-
-Action:
-- Investigate the reason for missing values before deciding whether to keep, replace, or exclude them.
-
-Status:
-- Under Review
+- Column names were clear and understandable.
+- Minor transformations were required for consistency during data preparation.
 
 ---
 
-### 4. Date and Time
+## Duplicate Data
 
-Observation:
-- Admission Date contains both date and time.
-
-Action:
-- Split into separate Date and Time columns if required for reporting.
-
-Status:
-- To Be Cleaned
+- One duplicate column was identified and removed.
 
 ---
 
-### 5. Patient Name
+## Missing Values
 
-Observation:
-- Patient name is stored in separate columns.
-
-Action:
-- Merge into a single Full Name column if required for reporting.
-
-Status:
-- Optional Transformation
+- Missing values were primarily found in the Patient Satisfaction Score column.
+- These missing values were retained because not every patient submitted a satisfaction rating.
 
 ---
 
-## Conclusion
+## Data Types
 
-The dataset is generally well-structured and suitable for analysis. The identified quality issues will be addressed during the Power Query data cleaning phase.
+Several columns contained incorrect data types.
+
+Examples include:
+
+- Patient Admission Date stored as Text.
+- Patient Wait Time stored as Text.
+- Patient Satisfaction Score stored as Text.
+- Admission Flag stored as Boolean.
+
+These were corrected during Power Query transformations.
+
+---
+
+## Data Consistency
+
+Inconsistent values were identified in the Patient Gender column.
+
+Examples:
+
+- M
+- Male
+- F
+- Female
+
+These values were standardized to:
+
+- Male
+- Female
+
+---
+
+## Overall Assessment
+
+The dataset contained minor quality issues including incorrect data types, inconsistent categorical values, duplicate columns, and missing satisfaction scores. These issues were resolved during the data cleaning phase to ensure accurate reporting and analysis.
