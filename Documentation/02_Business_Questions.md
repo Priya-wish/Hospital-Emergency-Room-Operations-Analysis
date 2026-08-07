@@ -1,47 +1,14 @@
-
 # Business Questions
 
-The following business questions will guide the analysis and dashboard development.
+The dashboard answers the following business questions:
 
-## Patient Volume
-
-- How many patients visit the Emergency Room?
-- What are the daily and monthly patient trends?
-- Which days experience the highest patient volume?
-
----
-
-## Waiting Time
-
-- What is the average patient waiting time?
-- Are there specific days with unusually long waiting times?
-- What percentage of patients are seen within 30 minutes?
-
----
-
-## Patient Satisfaction
-
-- What is the average patient satisfaction score?
-- Does patient satisfaction decrease as waiting time increases?
-
----
-
-## Admission Analysis
-
-- What percentage of patients are admitted versus not admitted?
-- Are certain age groups more likely to be admitted?
-
----
-
-## Patient Demographics
-
-- What is the age distribution of patients?
-- What is the gender distribution?
-- What is the race distribution?
-
----
-
-## Department Referrals
-
-- Which departments receive the highest number of referrals?
-- Are referral patterns changing over time?
+1. How many patients visited the Emergency Room?
+2. What percentage of patients required hospital admission?
+3. What is the average patient waiting time?
+4. What is the average patient satisfaction score?
+5. What percentage of patients were seen within 30 minutes?
+6. How do patient visits change over time?
+7. Which age group visits the Emergency Room the most?
+8. What is the gender distribution of patients?
+9. Which departments receive the highest specialist referrals?
+10. How do filters such as Month, Gender, and Admission Status affect overall performance?
