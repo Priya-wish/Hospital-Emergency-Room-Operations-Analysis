@@ -26,11 +26,8 @@ This project demonstrates the complete data analytics lifecycle—from understan
 
 ## 📊 Dashboard Preview
 
-> **📷 Dashboard Screenshot**
 
-
-```
-```
+![Dashboard](Images/Hospital_Analysis_Dashboard.png)
 
 ---
 
