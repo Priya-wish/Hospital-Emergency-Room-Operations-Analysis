@@ -28,10 +28,8 @@ This project demonstrates the complete data analytics lifecycle—from understan
 
 > **📷 Dashboard Screenshot**
 
-*Add your dashboard screenshot here after uploading it to the Images folder.*
 
-```text
-![Hospital Emergency Room Data](Images/Hospital_Analysis_Dashboard.png)
+```
 ```
 
 ---
